@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "133438244282",
+    "project_id": "freshly-by-me",
+    "storage_bucket": "freshly-by-me.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133438244282:android:40e8ae73662ad523464983",
+        "android_client_info": {
+          "package_name": "com.gjshop.freshly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133438244282-canon0ca185cjsou89p9vbjj7cvt7bp1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gjshop.freshly",
+            "certificate_hash": "b1942c127b568f449a566b159185d078b2677e04"
+          }
+        },
+        {
+          "client_id": "133438244282-clrp7k8e9mdh1lfbf3rilo4jk4fl7inm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCYgCOY6ZgtH6O9fkmGmN2Fh6E9I48voo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133438244282-clrp7k8e9mdh1lfbf3rilo4jk4fl7inm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
