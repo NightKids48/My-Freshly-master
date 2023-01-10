@@ -26,8 +26,7 @@ class WishlistView extends StatelessWidget {
           builder: (context, state) {
             if (state is ListWishlistIsSuccess && state.data.isNotEmpty) {
               return ListView.separated(
-                separatorBuilder: (context, index) =>
-                    VxDivider(color: colorName.grey.withOpacity(.2)).px16(),
+                separatorBuilder: (context, index) => VxDivider().px16(),
                 itemCount: state.data.length,
                 itemBuilder: (context, index) {
                   final data = state.data[index];
@@ -39,11 +38,14 @@ class WishlistView extends StatelessWidget {
                             [
                               // _buildHeader(),
                               VxBox()
-                                  .bgImage(DecorationImage(
+                                  .bgImage(
+                                    DecorationImage(
                                       fit: BoxFit.cover,
                                       image: NetworkImage(
                                         data.pictures![0],
-                                      )))
+                                      ),
+                                    ),
+                                  )
                                   .roundedSM
                                   .size(context.percentWidth * 25,
                                       context.percentWidth * 25)
@@ -75,20 +77,19 @@ class WishlistView extends StatelessWidget {
                                       }
                                     },
                                     child: IconButton(
-                                        onPressed: () {
-                                          BlocProvider.of<WishlistCubit>(
-                                                  context)
-                                              .removeFromWishList(data.id!);
-                                        },
-                                        icon: const Icon(
-                                          Icons.delete_outline,
-                                          color: colorName.accentRed,
-                                        )),
+                                      onPressed: () {
+                                        BlocProvider.of<WishlistCubit>(context)
+                                            .removeFromWishList(data.id!);
+                                      },
+                                      icon: const Icon(
+                                        Icons.delete_outline,
+                                        color: colorName.accentRed,
+                                      ),
+                                    ),
                                   ),
                                   16.heightBox,
                                 ],
                               ),
-                              // TODO: Add up your widgets
                             ],
                             alignment: MainAxisAlignment.start,
                           ).p16(),

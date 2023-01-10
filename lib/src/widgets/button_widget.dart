@@ -10,7 +10,7 @@ class ButtonWidget extends StatelessWidget {
       this.onPressed,
       this.text = 'Button',
       this.isLoading = false,
-      this.color = kPrimaryColor});
+      this.color = colorName.mintLeaf});
 
   @override
   Widget build(BuildContext context) {

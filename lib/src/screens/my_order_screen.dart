@@ -279,7 +279,7 @@ class _buildOrder extends StatelessWidget {
                               : listOrderState.model[index].paymentStatus! == 1
                                   ? colorName.accentBlue
                                   : colorName.accentGreen))
-                          .make() // TODO: Add up your widgets
+                          .make()
                     ]),
                     const VxDivider(type: VxDividerType.horizontal).py8(),
                     VStack(listOrderState.model[index].products
@@ -303,7 +303,7 @@ class _buildOrder extends StatelessWidget {
                         .text
                         .bold
                         .make()
-                        .objectBottomRight(), // TODO: Add up your widgets
+                        .objectBottomRight(),
                   ])
                       .p16()
                       .box
@@ -314,17 +314,12 @@ class _buildOrder extends StatelessWidget {
                       .onTap(() {
                     switch (listOrderState.model[index].paymentStatus!) {
                       case 0:
-                        // //TODO: Belum dibayar
-                        // Commons().showSnackBar(context, 'Ke Halaman Pembayaran');
                         context.go(
                           routeName.checkoutPath,
                           extra: listOrderState.model[index].id,
                         );
                         break;
                       case 1:
-                        //TODO: Diproses
-                        // Commons().showSnackBar(context, 'Ke Halaman Detail');
-
                         context.go(
                           routeName.paymentDetailPath,
                           extra: listOrderState.model[index].id,
@@ -332,7 +327,6 @@ class _buildOrder extends StatelessWidget {
 
                         break;
                       case 2:
-                        //TODO: Selesai
                         Commons().showSnackBar(context, 'Ke Halaman Selesai');
                         break;
                       default:

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freshly/src/blocs/blocs.dart';
-import 'package:freshly/src/blocs/detail_product/detail_product_bloc.dart';
-import 'package:freshly/src/blocs/list_user/list_user_bloc.dart';
 import 'package:freshly/src/cubits/cubits.dart';
 import 'package:freshly/src/utilities/utilities.dart';
 

@@ -61,7 +61,7 @@ class CartScreen extends StatelessWidget {
                                 isLoading: (orderState is AddToOrderIsLoading
                                     ? true
                                     : false),
-                                color: kPrimaryColor,
+                                color: colorName.primary,
                                 onPressed: () {
                                   BlocProvider.of<AddToOrderBloc>(context).add(
                                     OrderRequest(cartTotalPrice(),
@@ -123,8 +123,8 @@ class CartScreen extends StatelessWidget {
                               .medium
                               .color((checkState.model
                                       .containsAll(state.retrainData))
-                                  ? colorName.accentRed
-                                  : kPrimaryColor)
+                                  ? colorName.primary
+                                  : colorName.primary)
                               .makeCentered()
                               .pOnly(right: 16)
                               .onTap(() {
@@ -236,7 +236,7 @@ class CartScreen extends StatelessWidget {
                                               state.retrainData[index])
                                           ? Icon(
                                               Icons.check_box,
-                                              color: kPrimaryColor,
+                                              color: colorName.primary,
                                             ).onTap(() {
                                               BlocProvider.of<
                                                           CheckboxCartCubit>(
@@ -247,7 +247,7 @@ class CartScreen extends StatelessWidget {
                                           : Icon(
                                               Icons
                                                   .check_box_outline_blank_rounded,
-                                              color: kPrimaryColor,
+                                              color: colorName.primary,
                                             ).onTap(() {
                                               BlocProvider.of<
                                                           CheckboxCartCubit>(
@@ -358,7 +358,7 @@ class CartScreen extends StatelessWidget {
                                       onPressed: () {},
                                       icon: const Icon(
                                         Icons.delete_outline,
-                                        color: colorName.accentRed,
+                                        color: colorName.primary,
                                       )),
                                 )
                               ],

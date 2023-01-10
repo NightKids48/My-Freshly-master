@@ -1,8 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:freshly/src/blocs/blocs.dart';
 import 'package:freshly/src/models/models.dart';
 import 'package:meta/meta.dart';
-
 import '../../services/services.dart';
 
 part 'list_product_ikan_event.dart';

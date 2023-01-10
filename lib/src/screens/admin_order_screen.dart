@@ -113,7 +113,7 @@ class _AdminOrderScreenState extends State<AdminOrderScreen> {
                         onChanged: (String? value) {
                           // This is called when the user selects an item.
                         },
-                      ) // TODO: Add up your widgets
+                      )
                     ])
                         .p16()
                         .box
@@ -124,17 +124,12 @@ class _AdminOrderScreenState extends State<AdminOrderScreen> {
                         .onTap(() {
                       switch (listOrderState.model[index].paymentStatus!) {
                         case 0:
-                          // //TODO: Belum dibayar
-                          // Commons().showSnackBar(context, 'Ke Halaman Pembayaran');
                           context.go(
                             routeName.paymentPath,
                             extra: listOrderState.model[index].id,
                           );
                           break;
                         case 1:
-                          //TODO: Diproses
-                          // Commons().showSnackBar(context, 'Ke Halaman Detail');
-
                           context.go(
                             routeName.paymentDetailPath,
                             extra: listOrderState.model[index].id,
@@ -142,7 +137,6 @@ class _AdminOrderScreenState extends State<AdminOrderScreen> {
 
                           break;
                         case 2:
-                          //TODO: Selesai
                           Commons().showSnackBar(context, 'Ke Halaman Selesai');
                           break;
                         default:

@@ -57,7 +57,6 @@ class _DetailOrderScreenState extends State<DetailOrderScreen> {
       body: SafeArea(
         child: BlocConsumer<DetailOrderBloc, DetailOrderState>(
           listener: (context, state) {
-            // TODO: implement listener
             if (state is DetailOrderIsFailed) {
               Commons().showSnackbarError(context, state.message);
             }

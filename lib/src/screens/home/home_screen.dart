@@ -67,7 +67,6 @@ class _HomeScreenState extends State<HomeScreen> {
                           // mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            // ignore: prefer_const_constructors
                             CircleAvatar(
                               backgroundImage: NetworkImage(
                                 "https://static.standard.co.uk/s3fs-public/thumbnails/image/2016/03/31/14/peakyblinders3003a.jpg?width=1200&auto=webp&quality=75",

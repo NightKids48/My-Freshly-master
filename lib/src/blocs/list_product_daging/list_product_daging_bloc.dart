@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:freshly/src/services/services.dart';
-import 'package:freshly/src/utilities/utilities.dart';
+
 import 'package:meta/meta.dart';
 
 import '../../models/models.dart';

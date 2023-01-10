@@ -35,7 +35,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
             )
           ],
         ),
-      ).centered(),
+      ).centered().scrollVertical(),
     );
   }
 
